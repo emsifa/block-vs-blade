@@ -1,0 +1,4 @@
+vendor/
+views/blade-cache/*
+!views/blade-cache/.gitkeep
+composer.lock

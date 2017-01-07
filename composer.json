@@ -1,0 +1,6 @@
+{
+    "require": {
+        "emsifa/block": "2.*",
+        "rakit/blade": "5.3.*"
+    }
+}
