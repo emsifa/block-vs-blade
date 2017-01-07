@@ -9,7 +9,7 @@ Karena itu saya penasaran dengan performa library buatan saya tersebut. Untuk it
 
 Pada benchmarking ini blade yang digunakan adalah blade di laravel versi 5.3. Saya juga tidak menggunakan blade secara langsung, melainkan melalui library buatan saya juga, yakni [rakit/blade](https://github.com/rakit/blade). Tidak ada kode khusus pada rakit blade tersebut, rakit blade hanya mempermudah constructor-nya saja sehingga lebih mudah digunakan pada aplikasi non-laravel. Jadi tidak akan berpengaruh pada performa rendering blade asal laravel itu sendiri. Oia blade disini juga menggunakan caching karena blade pada Laravel-pun begitu.
 
-Pada benchmark ini selain menggunakan beberapa file view, saya menggunakan 2 buah file lain yaitu `benchmark.php` dan `render.php`. Berikut penjelasan masing-masing filenya:
+Pada benchmark terdapat 2 buah file yang berperan (selain file view), yaitu `benchmark.php` dan `render.php`. Berikut penjelasan masing-masing filenya:
 
 * `render.php`: file ini berisi kode yang akan merender file view.
 * `benchmark.php`: file ini digunakan untuk menghitung waktu yang diperlukan untuk rendering masing-masing library. File ini akan menjalankan `render.php` melalui `shell_exec` untuk melakukan rendering. Jadi proses rendering tidak dilakukan pada proses yang sama dengan `benchmark.php` ini.
