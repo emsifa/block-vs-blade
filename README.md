@@ -7,7 +7,7 @@ Seperti yang saya sebutkan pada dokumentasi `emsifa/block`, library tersebut ter
 
 Karena itu saya penasaran dengan performa library buatan saya tersebut. Untuk itu saya lakukan benchmarking.
 
-Pada benchmarking ini blade yang digunakan adalah blade di laravel versi 5.3. Saya juga tidak menggunakan blade secara langsung, melainkan melalui library buatan saya juga, yakni [rakit/blade](https://github.com/rakit/blade). Tidak ada kode khusus pada rakit blade tersebut, rakit blade hanya mempermudah constructor-nya saja sehingga lebih mudah digunakan. Jadi tidak akan berpengaruh pada performa rendering asal laravel itu sendiri. Oia blade disini juga menggunakan caching karena blade pada Laravel-pun begitu.
+Pada benchmarking ini blade yang digunakan adalah blade di laravel versi 5.3. Saya juga tidak menggunakan blade secara langsung, melainkan melalui library buatan saya juga, yakni [rakit/blade](https://github.com/rakit/blade). Tidak ada kode khusus pada rakit blade tersebut, rakit blade hanya mempermudah constructor-nya saja sehingga lebih mudah digunakan pada aplikasi non-laravel. Jadi tidak akan berpengaruh pada performa rendering blade asal laravel itu sendiri. Oia blade disini juga menggunakan caching karena blade pada Laravel-pun begitu.
 
 Pada benchmark ini selain menggunakan beberapa file view, saya menggunakan 2 buah file lain yaitu `benchmark.php` dan `render.php`. Berikut penjelasan masing-masing filenya:
 
